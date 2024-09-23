@@ -11,7 +11,7 @@ $layout-breakpoint-xsmall: 575px;
 .sidebar ul {
   list-style: none;
   padding: 0;
-  height: 64vh;
+  max-height: 65vh;
   overflow-y: scroll;
 }
 .sidebar ul::-webkit-scrollbar {
@@ -57,6 +57,7 @@ $layout-breakpoint-xsmall: 575px;
   border: 1px solid #c3c0c0;
 }
 .sidebar-section {
+  height: 80vh;
   padding: 12px 24px !important;
 }
 .search-container {
@@ -160,6 +161,9 @@ $layout-breakpoint-xsmall: 575px;
   .container-body {
     padding: 3% 6%;
   }
+  .sidebar-section {
+    height: auto;
+  }
   .sidebar {
     position: absolute;
     z-index: 99999;
@@ -173,7 +177,7 @@ $layout-breakpoint-xsmall: 575px;
   }
 
   .sidebar ul {
-    height: 82vh;
+    max-height: 84vh;
   }
   .overlay {
     position: fixed;
@@ -260,5 +264,38 @@ $layout-breakpoint-xsmall: 575px;
   .suggestions-list {
     top: 89px;
     left: 65px;
+  }
+}
+@media (max-width: 992px) and (max-height: 800px) {
+  .sidebar ul {
+    max-height: 64vh;
+  }
+}
+@media (max-height: 800px) and (max-width: 992px)  {
+  .sidebar {
+    height: 88vh;
+  }
+
+  .sidebar ul {
+    max-height: 83vh;
+  }
+}
+
+@media (max-height: 700px) and (max-width: 992px) {
+  .sidebar {
+    height: 92vh;
+  }
+
+  .sidebar ul {
+    max-height: 83vh;
+  }
+}
+
+@media (max-height: 600px) and (max-width: 992px) {
+  .sidebar {
+    height: 92vh;
+  }
+  .sidebar ul {
+    max-height: 84vh;
   }
 }
