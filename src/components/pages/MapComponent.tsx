@@ -149,9 +149,8 @@ const MapComponent = () => {
                 icon={customIcon}>
                 <Popup autoClose={true} closeOnClick={true} closeButton={true}>
                   <strong>
-                    <span>{location.name}</span>,
+                    <span>{location.name}</span>
                   </strong>
-                  <span> {location.city}</span>
                   <p>{location.description}</p>
                 </Popup>
               </Marker>
