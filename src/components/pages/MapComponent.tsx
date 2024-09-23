@@ -73,13 +73,13 @@ const MapComponent = () => {
       className="map"
       style={{ height: "80vh", width: "100%" }}>
       <LayersControl position="topleft">
-        <LayersControl.BaseLayer name="Street Map" checked>
+        <LayersControl.BaseLayer name="Street Map">
           <TileLayer
             url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
             attribution="&copy; OpenTopoMap contributors"
           />
         </LayersControl.BaseLayer>
-        <LayersControl.BaseLayer name="OpenStreetMap.HOT">
+        <LayersControl.BaseLayer name="Open Street Map" checked>
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

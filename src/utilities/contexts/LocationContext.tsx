@@ -76,7 +76,12 @@ export const LocationProvider = ({ children }: { children: ReactNode }) => {
 
   // Unselect the current location to reset view
   const resetMapView = () => {
-    setSelectedLocation(locations[9]);
+    if (selectedLocation === undefined) {
+      setSelectedLocation(locations[1]);
+    }
+    setTimeout(() => {
+      setSelectedLocation(undefined);
+    }, 100);
   };
 
   // Handle selecting a suggestion
