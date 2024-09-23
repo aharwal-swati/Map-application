@@ -68,7 +68,6 @@ const MapComponent = () => {
   return (
     <MapContainer
       center={defaultPosition}
-      inertiaMaxSpeed={1}
       zoom={5}
       minZoom={3}
       className="map"

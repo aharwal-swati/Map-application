@@ -42,7 +42,9 @@ export const useLocationContext = () => {
 // LocationProvider component
 export const LocationProvider = ({ children }: { children: ReactNode }) => {
   const [locations] = useState<Location[]>(
-    locationsData.Locations as Location[]
+    locationsData.Locations.sort((a, b) =>
+      a.city.localeCompare(b.city)
+    ) as Location[]
   );
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [selectedLocation, setSelectedLocation] = useState<
@@ -74,7 +76,7 @@ export const LocationProvider = ({ children }: { children: ReactNode }) => {
 
   // Unselect the current location to reset view
   const resetMapView = () => {
-    setSelectedLocation(undefined);
+    setSelectedLocation(locations[9]);
   };
 
   // Handle selecting a suggestion
