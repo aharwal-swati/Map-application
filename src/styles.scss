@@ -99,6 +99,7 @@ $layout-breakpoint-xsmall: 575px;
 .cursor {
   cursor: pointer;
 }
+
 .toggle-button {
   position: absolute;
   top: 20px;
@@ -187,7 +188,7 @@ $layout-breakpoint-xsmall: 575px;
   .toggle-button {
     display: block;
     left: 125px;
-    top: 92px;
+    top: 87px;
   }
 
   .searchbar {
@@ -249,7 +250,7 @@ $layout-breakpoint-xsmall: 575px;
     left: 65px;
   }
   .toggle-button {
-    top: 133px;
+    top: 129px;
     left: 100px;
   }
   .sidebar {

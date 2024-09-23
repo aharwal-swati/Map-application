@@ -51,8 +51,8 @@ export default function MapView() {
               <div className={`sidebar ${sidebarOpen ? "open" : "closed"}`}>
                 <Sidebar />
               </div>
-              <div onClick={toggleSidebar}>
-                <FaBars color="#646567" className="toggle-button" />
+              <div className="toggle-button" onClick={toggleSidebar}>
+                <FaBars color="#646567" className="" />
               </div>
             </div>
             <div className="col-lg-9 col-12 p-1">
