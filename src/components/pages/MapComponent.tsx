@@ -24,8 +24,20 @@ type LayerLocations = {
 };
 
 // Add custom icon for Marker
-const customIcon = new L.Icon({
+const customIconforLocation = new L.Icon({
   iconUrl: require("./../../assests/icon/marker32px.png"),
+  iconAnchor: [17, 45],
+  popupAnchor: [0, -45],
+});
+
+const customIconforHotels = new L.Icon({
+  iconUrl: require("./../../assests/icon/hotel.png"),
+  iconAnchor: [17, 45],
+  popupAnchor: [0, -45],
+});
+
+const customIconforTouristSpot = new L.Icon({
+  iconUrl: require("./../../assests/icon/landmark.png"),
   iconAnchor: [17, 45],
   popupAnchor: [0, -45],
 });
@@ -95,10 +107,9 @@ const MapComponent = () => {
           <LayerGroup>
             {locations.map((location, index) => (
               <Marker
-                alt={location.city}
                 key={location.id}
                 position={location.position}
-                icon={customIcon}
+                icon={customIconforLocation}
                 eventHandlers={{
                   dblclick: () => selectLocation(location.id),
                 }}>
@@ -128,7 +139,7 @@ const MapComponent = () => {
               <Marker
                 key={index}
                 position={location.position}
-                icon={customIcon}>
+                icon={customIconforHotels}>
                 <Popup autoClose={true} closeOnClick={true} closeButton={true}>
                   <strong>
                     <span>{location.name}</span>,
@@ -146,7 +157,7 @@ const MapComponent = () => {
               <Marker
                 key={index}
                 position={location.position}
-                icon={customIcon}>
+                icon={customIconforTouristSpot}>
                 <Popup autoClose={true} closeOnClick={true} closeButton={true}>
                   <strong>
                     <span>{location.name}</span>
