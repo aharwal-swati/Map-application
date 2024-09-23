@@ -14,34 +14,7 @@ import { LatLngExpression } from "leaflet";
 import L from "leaflet";
 import locationsData from "../../local-json/locations.json";
 import { useLocationContext } from "../../utilities/contexts/LocationContext";
-// Define a custom icon
-const customIcon = new L.Icon({
-  iconUrl: require("./../../assests/icon/marker32px.png"), // Add your custom marker image here
-  iconAnchor: [17, 45], // Adjust anchor to the correct point
-  popupAnchor: [0, -45], // Popup should appear above the marker
-});
 
-const defaultPosition: LatLngExpression = [52.52, 13.405]; // Default center of the map
-
-const MapUpdater = () => {
-  const { selectedLocation } = useLocationContext();
-  const map = useMap(); // Now it's safe to use useMap here
-
-  useEffect(() => {
-    if (selectedLocation) {
-      map.flyTo(selectedLocation.position, 10); // Fly to selected position
-    } else {
-      map.flyTo(defaultPosition, 5); // Reset to default view
-    }
-  }, [selectedLocation, map]);
-
-  // Listen for map click events
-  useMapEvent("dblclick", (e) => {
-    map.flyTo(e.latlng, 10); // Zoom into the location clicked
-  });
-
-  return null; // This component doesn't render anything
-};
 type LayerLocations = {
   name: string;
   city: string;
@@ -49,12 +22,45 @@ type LayerLocations = {
   description: string;
   category?: string;
 };
+
+// Add custom icon for Marker
+const customIcon = new L.Icon({
+  iconUrl: require("./../../assests/icon/marker32px.png"),
+  iconAnchor: [17, 45],
+  popupAnchor: [0, -45],
+});
+
+// Default center of the map
+const defaultPosition: LatLngExpression = [52.52, 13.405];
+
+const MapUpdater = () => {
+  const { selectedLocation } = useLocationContext();
+  const map = useMap();
+
+  useEffect(() => {
+    // Fly to the selected location's position or default position
+    if (selectedLocation) {
+      map.flyTo(selectedLocation.position, 10);
+    } else {
+      map.flyTo(defaultPosition, 5);
+    }
+  }, [selectedLocation, map]);
+
+  // Listen for double-click events on the map to fly to that location
+  useMapEvent("dblclick", (e) => {
+    map.flyTo(e.latlng, 10);
+  });
+
+  return null;
+};
+
 const MapComponent = () => {
   const { locations, selectLocation } = useLocationContext();
   const [hotellocations, setHotelLocations] = useState<LayerLocations[]>([]);
   const [touristSpots, setTouristSpots] = useState<LayerLocations[]>([]);
+
   useEffect(() => {
-    // Fetching from JSON or API
+    // Set hotel and tourist spot locations from the imported JSON data
     setHotelLocations(locationsData.hotels as LayerLocations[]);
     setTouristSpots(locationsData.touristSpots as LayerLocations[]);
   }, []);

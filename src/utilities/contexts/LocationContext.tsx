@@ -1,4 +1,3 @@
-// src/context/LocationContext.tsx
 import React, { createContext, useState, useContext, ReactNode } from "react";
 import locationsData from "./../../local-json/locations.json";
 
@@ -42,7 +41,9 @@ export const useLocationContext = () => {
 
 // LocationProvider component
 export const LocationProvider = ({ children }: { children: ReactNode }) => {
-  const [locations] = useState<Location[]>(locationsData.Locations as Location[]);
+  const [locations] = useState<Location[]>(
+    locationsData.Locations as Location[]
+  );
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [selectedLocation, setSelectedLocation] = useState<
     Location | undefined
@@ -65,22 +66,24 @@ export const LocationProvider = ({ children }: { children: ReactNode }) => {
       )
     );
   };
-
+  // add selected location
   const selectLocation = (id: number) => {
     const location = locations.find((loc) => loc.id === id);
     setSelectedLocation(location);
   };
 
+  // Unselect the current location to reset view
   const resetMapView = () => {
-    setSelectedLocation(undefined); // Unselect the current location to reset view
+    setSelectedLocation(undefined);
   };
 
   // Handle selecting a suggestion
   const handleSelectSuggestion = (location: Location) => {
-    setSearchQuery(location.city); // Set the selected suggestion in the input field
+    setSearchQuery(location.city);
     setIsActive(false);
     selectLocation(location.id);
   };
+
   return (
     <LocationContext.Provider
       value={{

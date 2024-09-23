@@ -1,3 +1,8 @@
+$layout-breakpoint-large: 1200px;
+$layout-breakpoint-md: 995px;
+$layout-breakpoint-small: 800px;
+$layout-breakpoint-xsmall: 575px;
+
 .sidebar {
   font-family: math;
   transition: none;
@@ -91,8 +96,8 @@
 .sidebar.open {
   transform: translateX(0);
 }
-.cursor{
-    cursor: pointer;
+.cursor {
+  cursor: pointer;
 }
 .toggle-button {
   position: absolute;
@@ -143,11 +148,6 @@
 .suggestion-item:hover {
   background-color: #f0f0f0;
 }
-
-$layout-breakpoint-large: 1200px;
-$layout-breakpoint-md: 995px;
-$layout-breakpoint-small: 800px;
-$layout-breakpoint-xsmall: 575px;
 
 @media (max-width: $layout-breakpoint-large) {
   .container-body {

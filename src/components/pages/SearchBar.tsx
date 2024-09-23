@@ -2,8 +2,6 @@ import React from "react";
 import { useLocationContext } from "../../utilities/contexts/LocationContext";
 import { IoSearch, IoClose, IoArrowBack } from "react-icons/io5";
 
-// Define the type for the location data
-
 const SearchBar = () => {
   const {
     searchQuery,
@@ -17,12 +15,14 @@ const SearchBar = () => {
     handleSelectSuggestion,
   } = useLocationContext();
 
+  // Handle input change to update search query and filter locations
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
     setIsActive(true);
     filterLocations(e.target.value);
   };
 
+  // Clear the input field
   const clearInput = () => {
     setSearchQuery("");
   };

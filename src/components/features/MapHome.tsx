@@ -6,8 +6,8 @@ import { FaBars } from "react-icons/fa";
 import { IoCaretBackSharp } from "react-icons/io5";
 
 export default function MapView() {
-  const [sidebarOpen, setSidebarOpen] = useState(false); // Sidebar state
-  // Toggle sidebar visibility
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
@@ -15,12 +15,12 @@ export default function MapView() {
     // Function to check screen size
     const handleResize = () => {
       if (window.innerWidth < 995) {
-        setSidebarOpen(false); // Add 'closed' class if screen size is less than 768px
+        setSidebarOpen(false);
       } else {
-        setSidebarOpen(true); // Remove 'closed' class otherwise
+        setSidebarOpen(true);
       }
     };
-    console.log("check");
+
     // Initial check
     handleResize();
 
@@ -37,7 +37,6 @@ export default function MapView() {
           <div className="row m-0">
             <div className="col-lg-3 sidebar-section ">
               <SearchBar />
-              {/* Overlay */}
               {sidebarOpen && (
                 <div className="overlay" onClick={toggleSidebar}></div>
               )}
@@ -55,10 +54,6 @@ export default function MapView() {
               <div onClick={toggleSidebar}>
                 <FaBars color="#646567" className="toggle-button" />
               </div>
-
-              {/* <button className="toggle-button" onClick={toggleSidebar}>
-      
-    </button> */}
             </div>
             <div className="col-lg-9 col-12 p-1">
               <MapComponent />
