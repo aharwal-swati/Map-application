@@ -1,0 +1,263 @@
+.sidebar {
+  font-family: math;
+  transition: none;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  height: 64vh;
+  overflow-y: scroll;
+}
+.sidebar ul::-webkit-scrollbar {
+  display: none;
+}
+.sidebar li {
+  cursor: pointer;
+  height: auto;
+  line-height: 30px;
+  padding: 5px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.sidebar li:hover {
+  background-color: #e8ecef;
+}
+
+.container-body {
+  padding: 3% 10%;
+  background-color: #fffcfa;
+}
+.card-container {
+  border-radius: 25px !important;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.header {
+  background-color: #fbf6f5;
+  border-bottom: 5px solid #de6339;
+}
+.header img {
+  margin-left: 65px;
+  width: 20%;
+  min-width: 200px;
+  max-width: 250px;
+}
+.title {
+  color: #646567;
+  font-family: fantasy;
+}
+.map {
+  border-top-right-radius: 22px !important;
+  border-bottom-right-radius: 22px;
+  border: 1px solid #c3c0c0;
+}
+.sidebar-section {
+  padding: 12px 24px !important;
+}
+.search-container {
+  width: 100%;
+  position: relative;
+}
+.searchbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f7f7f8;
+  padding: 0px 6px;
+  border-radius: 6px;
+  margin: 22px 0px;
+}
+
+.searchbar-input {
+  width: 100%;
+  height: 2.3rem;
+  background: #f5f5f5;
+  border: none;
+}
+
+.searchbar-input:focus {
+  outline: none;
+}
+
+.country-title {
+  color: gray;
+  font-size: medium;
+}
+.sidebar.closed {
+  transform: translateX(-400px);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+.cursor{
+    cursor: pointer;
+}
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  cursor: pointer;
+  display: none;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+.expand-icon {
+  display: none;
+  height: 48px !important;
+  width: 23px !important;
+  padding: 3px !important;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-left: 5px soilid gray;
+  border: 1px solid gray;
+}
+.suggestions-list {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #f5f5f5;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  top: 35px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.suggestions-list::-webkit-scrollbar {
+  display: none;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+$layout-breakpoint-large: 1200px;
+$layout-breakpoint-md: 995px;
+$layout-breakpoint-small: 800px;
+$layout-breakpoint-xsmall: 575px;
+
+@media (max-width: $layout-breakpoint-large) {
+  .container-body {
+    padding: 3% 8%;
+  }
+}
+
+@media (max-width: $layout-breakpoint-md) {
+  .container-body {
+    padding: 3% 6%;
+  }
+  .sidebar {
+    position: absolute;
+    z-index: 99999;
+    height: 86.5vh;
+    left: 0px;
+    top: 0px;
+    background-color: white;
+    width: 25vh;
+    padding: 10px;
+    transition: 0.3s ease-in;
+  }
+
+  .sidebar ul {
+    height: 82vh;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 9999; /* Make sure it's behind the sidebar but above the map */
+  }
+
+  .toggle-button {
+    display: block;
+    left: 125px;
+    top: 92px;
+  }
+
+  .searchbar {
+    position: absolute;
+    z-index: 9999;
+    width: 70%;
+    top: 16px;
+    left: 90px;
+    background: #fff;
+  }
+
+  .searchbar-input {
+    padding-left: 35px;
+    background: #fff;
+  }
+  .card-container,
+  .map {
+    border-radius: 0px !important;
+  }
+
+  .expand-icon {
+    position: absolute;
+    z-index: 9999;
+    background-color: #fff;
+    left: 25vh;
+    top: 40vh;
+
+    transition: 0.3s ease-in;
+    display: block;
+  }
+
+  .suggestions-list {
+    display: block;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    width: 70%;
+    top: 72px;
+    left: 90px;
+  }
+}
+
+@media (max-width: $layout-breakpoint-small) {
+  .container-body {
+    padding: 3% 4%;
+  }
+}
+/* Make the sidebar collapsible on smaller screens */
+
+@media (max-width: $layout-breakpoint-xsmall) {
+  .searchbar {
+    margin-top: 40px;
+    left: 65px;
+  }
+  .toggle-button {
+    top: 133px;
+    left: 100px;
+  }
+  .sidebar {
+    height: 89vh;
+  }
+
+  .suggestions-list {
+    top: 89px;
+    left: 65px;
+  }
+}

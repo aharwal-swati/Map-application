@@ -1,0 +1,331 @@
+{
+  "Locations":[
+  {
+    "id": 1,
+    "country": "Austria",
+    "city": "Vienna",
+    "position": [48.2082, 16.3738],
+    "description": "Capital of Austria.",
+    "url": "https://en.wikipedia.org/wiki/Vienna"
+  },
+  {
+    "id": 2,
+    "country": "Belgium",
+    "city": "Brussels",
+    "position": [50.8503, 4.3517],
+    "description": "Capital of Belgium.",
+    "url": "https://en.wikipedia.org/wiki/Brussels"
+  },
+  {
+    "id": 3,
+    "country": "Bulgaria",
+    "city": "Sofia",
+    "position": [42.6977, 23.3219],
+    "description": "Capital of Bulgaria.",
+    "url": "https://en.wikipedia.org/wiki/Sofia"
+  },
+  {
+    "id": 4,
+    "country": "Croatia",
+    "city": "Zagreb",
+    "position": [45.815, 15.9819],
+    "description": "Capital of Croatia.",
+    "url": "https://en.wikipedia.org/wiki/Zagreb"
+  },
+  {
+    "id": 5,
+    "country": "Czech Republic",
+    "city": "Prague",
+    "position": [50.0755, 14.4378],
+    "description": "Capital of Czech Republic.",
+    "url": "https://en.wikipedia.org/wiki/Prague"
+  },
+  {
+    "id": 6,
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "position": [55.6761, 12.5683],
+    "description": "Capital of Denmark.",
+    "url": "https://en.wikipedia.org/wiki/Copenhagen"
+  },
+  {
+    "id": 7,
+    "country": "Finland",
+    "city": "Helsinki",
+    "position": [60.1699, 24.9384],
+    "description": "Capital of Finland.",
+    "url": "https://en.wikipedia.org/wiki/Helsinki"
+  },
+  {
+    "id": 8,
+    "country": "France",
+    "city": "Paris",
+    "position": [48.8566, 2.3522],
+    "description": "Capital of France.",
+    "url": "https://en.wikipedia.org/wiki/Paris"
+  },
+  {
+    "id": 9,
+    "country": "Georgia",
+    "city": "Tbilisi",
+    "position": [41.7151, 44.8271],
+    "description": "Capital of Georgia.",
+    "url": "https://en.wikipedia.org/wiki/Tbilisi"
+  },
+  {
+    "id": 10,
+    "country": "Germany",
+    "city": "Berlin",
+    "position": [52.52, 13.405],
+    "description": "Capital of Germany.",
+    "url": "https://en.wikipedia.org/wiki/Berlin"
+  },
+  {
+    "id": 11,
+    "country": "Greece",
+    "city": "Athens",
+    "position": [37.9838, 23.7275],
+    "description": "Capital of Greece.",
+    "url": "https://en.wikipedia.org/wiki/Athens"
+  },
+  {
+    "id": 12,
+    "country": "Hungary",
+    "city": "Budapest",
+    "position": [47.4979, 19.0402],
+    "description": "Capital of Hungary.",
+    "url": "https://en.wikipedia.org/wiki/Budapest"
+  },
+  {
+    "id": 13,
+    "country": "Iceland",
+    "city": "Reykjavik",
+    "position": [64.1466, -21.9426],
+    "description": "Capital of Iceland.",
+    "url": "https://en.wikipedia.org/wiki/Reykjavik"
+  },
+  {
+    "id": 14,
+    "country": "Italy",
+    "city": "Rome",
+    "position": [41.9028, 12.4964],
+    "description": "Capital of Italy.",
+    "url": "https://en.wikipedia.org/wiki/Rome"
+  },
+  {
+    "id": 15,
+    "country": "Lithuania",
+    "city": "Vilnius",
+    "position": [54.6872, 25.2797],
+    "description": "Capital of Lithuania.",
+    "url": "https://en.wikipedia.org/wiki/Vilnius"
+  },
+  {
+    "id": 16,
+    "country": "Luxembourg",
+    "city": "Luxembourg",
+    "position": [49.6117, 6.1319],
+    "description": "Capital of Luxembourg.",
+    "url": "https://en.wikipedia.org/wiki/Luxembourg_City"
+  },
+  {
+    "id": 17,
+    "country": "Germany",
+    "city": "Stuttgart",
+    "position": [48.7758, 9.1829],
+    "description": "Capital of Baden-Württemberg.",
+    "url": "https://en.wikipedia.org/wiki/Stuttgart"
+  },
+  {
+    "id": 18,
+    "country": "Germany",
+    "city": "Munich",
+    "position": [48.1351, 11.582],
+    "description": "Capital of Bavaria.",
+    "url": "https://en.wikipedia.org/wiki/Munich"
+  },
+  {
+    "id": 19,
+    "country": "Germany",
+    "city": "Potsdam",
+    "position": [52.3906, 13.0645],
+    "description": "Capital of Brandenburg.",
+    "url": "https://en.wikipedia.org/wiki/Potsdam"
+  },
+  {
+    "id": 20,
+    "country": "Germany",
+    "city": "Bremen",
+    "position": [53.0793, 8.8017],
+    "description": "Capital city-state of Bremen.",
+    "url": "https://en.wikipedia.org/wiki/Bremen"
+  },
+  {
+    "id": 21,
+    "country": "Germany",
+    "city": "Hamburg",
+    "position": [53.5511, 9.9937],
+    "description": "Capital city-state of Hamburg.",
+    "url": "https://en.wikipedia.org/wiki/Hamburg"
+  },
+  {
+    "id": 22,
+    "country": "Germany",
+    "city": "Wiesbaden",
+    "position": [50.0826, 8.24],
+    "description": "Capital of Hesse.",
+    "url": "https://en.wikipedia.org/wiki/Wiesbaden"
+  },
+  {
+    "id": 23,
+    "country": "Germany",
+    "city": "Hanover",
+    "position": [52.3759, 9.732],
+    "description": "Capital of Lower Saxony.",
+    "url": "https://en.wikipedia.org/wiki/Hanover"
+  },
+  {
+    "id": 24,
+    "country": "Germany",
+    "city": "Schwerin",
+    "position": [53.6294, 11.4132],
+    "description": "Capital of Mecklenburg-Vorpommern.",
+    "url": "https://en.wikipedia.org/wiki/Schwerin"
+  },
+  {
+    "id": 25,
+    "country": "Germany",
+    "city": "Düsseldorf",
+    "position": [51.2277, 6.7735],
+    "description": "Capital of North Rhine-Westphalia.",
+    "url": "https://en.wikipedia.org/wiki/Düsseldorf"
+  },
+  {
+    "id": 26,
+    "country": "Germany",
+    "city": "Mainz",
+    "position": [49.9929, 8.2473],
+    "description": "Capital of Rhineland-Palatinate.",
+    "url": "https://en.wikipedia.org/wiki/Mainz"
+  },
+  {
+    "id": 27,
+    "country": "Germany",
+    "city": "Saarbrücken",
+    "position": [49.2402, 6.9969],
+    "description": "Capital of Saarland.",
+    "url": "https://en.wikipedia.org/wiki/Saarbrücken"
+  },
+  {
+    "id": 28,
+    "country": "Germany",
+    "city": "Dresden",
+    "position": [51.0504, 13.7373],
+    "description": "Capital of Saxony.",
+    "url": "https://en.wikipedia.org/wiki/Dresden"
+  },
+  {
+    "id": 29,
+    "country": "Germany",
+    "city": "Magdeburg",
+    "position": [52.1205, 11.6276],
+    "description": "Capital of Saxony-Anhalt.",
+    "url": "https://en.wikipedia.org/wiki/Magdeburg"
+  },
+  {
+    "id": 30,
+    "country": "Germany",
+    "city": "Kiel",
+    "position": [54.3233, 10.1228],
+    "description": "Capital of Schleswig-Holstein.",
+    "url": "https://en.wikipedia.org/wiki/Kiel"
+  },
+  {
+    "id": 31,
+    "country": "Germany",
+    "city": "Erfurt",
+    "position": [50.9848, 11.0299],
+    "description": "Capital of Thuringia.",
+    "url": "https://en.wikipedia.org/wiki/Erfurt"
+  }
+],
+"touristSpots": [
+    {
+      "name": "Brandenburg Gate",
+      "position": [52.5163, 13.3777],
+      "description": "A symbol of Berlin and German reunification.",
+      "category": "Historical Monument"
+    },
+    {
+      "name": "Neuschwanstein Castle",
+      "position": [47.5576, 10.7498],
+      "description": "A 19th-century Romanesque Revival palace.",
+      "category": "Castle"
+    },
+    {
+      "name": "Cologne Cathedral",
+      "position": [50.9413, 6.9583],
+      "description": "A renowned Gothic cathedral in Cologne.",
+      "category": "Religious Building"
+    },
+    {
+      "name": "Heidelberg Castle",
+      "position": [49.4104, 8.7157],
+      "description": "Heidelberg Castle attracts around a million visitors from all over the world",
+      "category": "Castle"
+    },
+    {
+      "name": "The Black Forest",
+      "position": [48.0327, 8.2097],
+      "description": "The Black Forest is a large forested mountain range in the state of Baden-Württemberg in southwest Germany",
+      "category": "City"
+    },
+    {
+      "name": "Sanssouci Palace",
+      "position": [50.9413, 6.9583],
+      "description": "Sanssouci Palace and its extensive park and grounds are UNESCO World Heritage – a must-see sight in Europe",
+      "category": "Palace"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Adlon Kempinski",
+      "position": [52.5166, 13.3807],
+      "city": "Berlin",
+      "description": "Luxury hotel near Brandenburg Gate."
+    },
+    {
+      "name": "Bayerischer Hof",
+      "position": [48.1415, 11.5735],
+      "city": "Munich",
+      "description": "One of Munich's most famous luxury hotels."
+    },
+    {
+      "name": "The Fontenay",
+      "position": [53.5587, 9.9871],
+      "city": "Hamburg",
+      "description": "Luxury hotel with stunning views of Alster Lake."
+    },
+    {
+      "name": "Restaurant Tim Raue",
+      "position": [52.5074, 13.3884],
+      "city": "Berlin",
+      "description": "Two Michelin-starred restaurant offering Asian-inspired cuisine."
+    },
+    {
+      "name": "Schwarzreiter Tagesbar & Restaurant",
+      "position": [48.1404, 11.5800],
+      "city": "Munich",
+      "description": "One Michelin-starred restaurant serving modern Bavarian cuisine."
+    },
+    {
+      "name": "Haerlin",
+      "position": [53.5550, 9.9922],
+      "city": "Hamburg",
+      "description": "Elegant French restaurant with two Michelin stars."
+    }
+  ]
+} 
+
+  
+
